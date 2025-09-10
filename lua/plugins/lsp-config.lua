@@ -8,11 +8,13 @@ return{
   {
     "mason-org/mason-lspconfig.nvim",
     opts = {
-        ensure_installed = { "lua_ls", "rust_analyzer","ast_grep","clangd" },
+      ensure_installed = { "lua_ls", "rust_analyzer","ast_grep","clangd" },
+      auto_install =true,
     },
   },
   {
     "neovim/nvim-lspconfig",
+    lazy = false,
     config = function()
       local capabilities = require('cmp_nvim_lsp').default_capabilities()
       local lspconfig = require("lspconfig")
