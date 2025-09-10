@@ -28,9 +28,9 @@ return{
       lspconfig.clangd.setup({
         capabilities = capabilities,
       })
-      vim.keymap.set('n','K',vim.lsp.buf.hover, {})
-      vim.keymap.set('n','gd',vim.lsp.buf.definition, {})
-      vim.keymap.set('n','<Leader>ca',vim.lsp.buf.code_action, {})
+      vim.keymap.set('n','K',vim.lsp.buf.hover, {desc = "Highight info on the current word"})
+      vim.keymap.set('n','gd',vim.lsp.buf.definition, {desc = "Provide some def for the current word"})
+      vim.keymap.set('n','<Leader>ca',vim.lsp.buf.code_action, {desc = "Provide some code action"})
     end
   }
 
