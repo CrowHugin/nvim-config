@@ -22,7 +22,7 @@ return{
         dashboard.button("e", "  Nouveau fichier", ":ene <BAR> startinsert<CR>"),
         dashboard.button("f", "󰈞  Rechercher fichier", ":Telescope find_files<CR>"),
         dashboard.button("r", "  > Recent"   , ":Telescope oldfiles<CR>"),
-        dashboard.button("g", "  Git status", ":LazyGit<CR>"),
+        dashboard.button("g", "  Git status", ":Neogit kind=floating<CR>"),
         dashboard.button("p", "󰏓  Plugins", ":Lazy<CR>"),
         dashboard.button("u", "󰚰  MAJ Plugins", ":Lazy sync<CR>"),
         dashboard.button("s", "  Paramètres", ":e $MYVIMRC | :cd %:p:h | :Neotree toggle filesystem reveal right<CR>"),

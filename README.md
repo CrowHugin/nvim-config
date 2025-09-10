@@ -20,3 +20,5 @@ Here I use :
     -toggleterm
     -whichkey
     -noice
+    -neogit
+    -diffview
