@@ -19,3 +19,4 @@ Here I use :
     -none-ls
     -toggleterm
     -whichkey
+    -noice
