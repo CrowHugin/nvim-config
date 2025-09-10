@@ -18,3 +18,4 @@ Here I use :
     -dapui
     -none-ls
     -toggleterm
+    -whichkey
