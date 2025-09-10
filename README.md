@@ -2,6 +2,10 @@
 
 *my config for nvim*
 
+To use it: 
+
+*git clone https://github.com/CrowHugin/nvim_config*
+
 Here I use :
 
     -catppuccin (mocha)
