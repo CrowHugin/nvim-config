@@ -10,3 +10,11 @@ Here I use :
     -neo-tree
     -telescope
     -treesitter
+    -alpha
+    -cmp-nvim-lsp
+    -nvim-cmp
+    -LuaSnip
+    -dap
+    -dapui
+    -none-ls
+    -toggleterm
