@@ -29,3 +29,4 @@ Here I use :
     -undotree
     -harpoon2
 	-obsidian
+	-pomo (pomodoro)
