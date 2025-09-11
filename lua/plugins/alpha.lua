@@ -26,6 +26,7 @@ return{
         dashboard.button("p", "󰏓  Plugins", ":Lazy<CR>"),
         dashboard.button("u", "󰚰  MAJ Plugins", ":Lazy sync<CR>"),
         dashboard.button("s", "  Paramètres", ":e $MYVIMRC | :cd %:p:h | :Neotree toggle filesystem reveal right<CR>"),
+        dashboard.button("o", "󰘳  Paramètres Obsidian", ":e ~/.config/nvim/lua/plugins/obsidian.lua<CR>"),
         dashboard.button("q", "  Quitter Neovim", ":qa<CR>"),
       }
 
