@@ -6,26 +6,39 @@ return {
     "nvim-lua/plenary.nvim",
   },
   keys = {
-    { "<leader>wo", "<cmd>lua print(require('obsidian').get_client().dir)<cr>", desc = "Afficher le dossier Obsidian" },
+    {
+      "<Leader>wo",
+      "<cmd>lua print(require('obsidian').get_client().dir)<cr>",
+      desc = "Show the current Obsidian workspace",
+    },
+    {
+      "<Leader>wp",
+      ":ObsidianWorkspace<CR>",
+      desc = "Show the list of workspaces",
+    },
   },
 
   opts = {
     -- 🔹 Emplacement de ton "vault" Obsidian
     workspaces = {
       {
-        name = "notes",          -- nom de ton vault (libre, juste un label)
+        name = "notes",      -- nom de ton vault (libre, juste un label)
         path = "~/Bureau/notes", -- chemin vers ton dossier Obsidian
       },
       {
         name = "nvim",
         path = "~/.config/nvim",
       },
+      {
+        name = "solar_sys",
+        path = "~/Documents/prog/cpp/solar_sys",
+      },
     },
 
     -- 🔹 Activer la complétion pour les liens [[...]]
     completion = {
       nvim_cmp = true, -- si tu utilises nvim-cmp
-      min_chars = 2,   -- commence la complétion après 2 caractères
+      min_chars = 2, -- commence la complétion après 2 caractères
     },
 
     -- 🔹 Templates (optionnel, si tu en utilises dans Obsidian)
@@ -45,6 +58,6 @@ return {
         end,
         opts = { noremap = false, expr = true, buffer = true },
       },
-        },
+    },
   },
 }
