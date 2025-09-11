@@ -4,7 +4,7 @@
 
 To use it: 
 
-*git clone https://github.com/CrowHugin/nvim_config*
+    git clone https://github.com/CrowHugin/nvim_config
 
 Here I use :
 
@@ -26,3 +26,5 @@ Here I use :
     -noice
     -neogit
     -diffview
+    -undotree
+    -harpoon2
