@@ -28,3 +28,4 @@ Here I use :
     -diffview
     -undotree
     -harpoon2
+	-obsidian
