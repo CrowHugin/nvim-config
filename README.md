@@ -50,7 +50,7 @@ Plugin used inside Efficient nvim:
 |     which-key      |      https://github.com/folke/which-key.nvim       |
 
 ---
-*Configuration:*
+*Config:*
 
 To uninstall a plugin use 
 
@@ -59,7 +59,9 @@ To uninstall a plugin use
 ```
 and follow instructions 
 
-To change a plugin use <Leader> + n (<Leader> is the spacebar by default ) and go inside the plugin you wanna change. Then follow the instructions on the plugins documentation.
+To add a plugin:
+
+Add a file named "plugins_you_wanna_use".lua inside lua/plugins, then change "plugins_you_wanna_use" by the name you want
 
 For auto completion and hightlighting:
 
