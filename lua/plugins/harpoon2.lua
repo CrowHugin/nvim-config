@@ -9,7 +9,7 @@ return{
       harpoon:setup()
       -- REQUIRED
 
-      vim.keymap.set("n", "<leader>a", function() harpoon:list():add() end, {desc = "add a buffer in harpoon"})
+      vim.keymap.set("n", "<leader>ha", function() harpoon:list():add() end, {desc = "add a buffer in harpoon"})
       vim.keymap.set("n", "<C-e>", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end, {desc = "Open harpoon window"})
 
       vim.keymap.set("n", "<Leader>hh", function() harpoon:list():select(1) end, {desc = "(harpoon) select first buffer"})
@@ -20,6 +20,7 @@ return{
       -- Toggle previous & next buffers stored within Harpoon list
       vim.keymap.set("n", "<Leader><Tab>", function() harpoon:list():prev() end, {desc = "(harpoon) select next buffer"})
       vim.keymap.set("n", "<Leader><S-Tab>", function() harpoon:list():next() end, {desc = "(harpoon) select prev buffer"})
+      vim.keymap.set("n", "<Leader>hd", function() harpoon:list():remove()end, { desc = "(harpoon) remove current buffer" })
 
 
       local conf = require("telescope.config").values
