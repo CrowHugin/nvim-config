@@ -1,11 +1,14 @@
 # Efficient Nvim
 
+
+---
 *requirement :* 
+
 - *Nvim >= 0.10*
 - Git >= 2.19.0
 - Nerd Front **(optional)**
 
-
+---
 *installation:*
 
 *If you already have an nvim configuration use:*
@@ -31,6 +34,8 @@ Plugin used inside Efficient nvim:
 |     lsp-config     |      https://github.com/neovim/nvim-lspconfig      |
 |      lualine       |    https://github.com/nvim-lualine/lualine.nvim    |
 |      luaSnip       |        https://github.com/L3MON4D3/LuaSnip         |
+|       mason        |      https://github.com/mason-org/mason.nvim       |
+|  mason-lspconfig   | https://github.com/mason-org/mason-lspconfig.nvim  |
 |      neo-tree      |   https://github.com/nvim-neo-tree/neo-tree.nvim   |
 |     neogit<br>     |        https://github.com/NeogitOrg/neogit         |
 |       noice        |        https://github.com/folke/noice.nvim         |
@@ -44,4 +49,48 @@ Plugin used inside Efficient nvim:
 |      undotree      |       https://github.com/jiaoshijie/undotree       |
 |     which-key      |      https://github.com/folke/which-key.nvim       |
 
+---
+*Configuration:*
 
+To uninstall a plugin use 
+
+```
+:Lazy
+```
+and follow instructions 
+
+To change a plugin use <Leader> + n (<Leader> is the spacebar by default ) and go inside the plugin you wanna change. Then follow the instructions on the plugins documentation.
+
+For auto completion and hightlighting:
+
+use :
+
+```
+:Mason 
+```
+and install any packages you need for the languages you use
+
+installed by default :
+- ast-grep
+- balck
+- clangd
+- isort
+- lua-language-server
+- pylint
+- rust-analyser
+- sonarlint-language-server
+- stylua
+
+For Obsidian:
+
+open the config and replace / add with what you want
+```
+	{
+	      name = "the name you wanna use",
+	      path = "path you wanna use",
+      },
+    },
+```
+Make use to have Obsidian on your system and to have a vault open where the path is.
+
+*enjoy :)*

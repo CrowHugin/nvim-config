@@ -1,6 +1,6 @@
 return {
   "epwalsh/obsidian.nvim",
-  version = "*", -- garde la dernière version stable
+  version = "*", 
   lazy = false,
   dependencies = {
     "nvim-lua/plenary.nvim",
@@ -19,29 +19,20 @@ return {
   },
 
   opts = {
-    -- 🔹 Emplacement de ton "vault" Obsidian
     workspaces = {
       {
-        name = "notes",      -- nom de ton vault (libre, juste un label)
+        name = "notes",      -- nom du vault
         path = "~/Bureau/notes", -- chemin vers ton dossier Obsidian
-      },
-      {
-        name = "nvim",
-        path = "~/.config/nvim",
-      },
-      {
-        name = "solar_sys",
-        path = "~/Documents/prog/cpp/solar_sys",
       },
     },
 
-    -- 🔹 Activer la complétion pour les liens [[...]]
+    --  Activer la complétion pour les liens [[...]]
     completion = {
       nvim_cmp = true, -- si tu utilises nvim-cmp
       min_chars = 2, -- commence la complétion après 2 caractères
     },
 
-    -- 🔹 Templates (optionnel, si tu en utilises dans Obsidian)
+    --  Templates (optionnel, si tu en utilises dans Obsidian)
     templates = {
       folder = "Templates", -- sous-dossier dans ton vault
       date_format = "%Y-%m-%d",
@@ -50,7 +41,7 @@ return {
 
     open_notes_in = "vsplit", --can be current, vsplit, hsplit or in comment
 
-    -- 🔹 Mapping pour suivre un lien ou créer la note correspondante
+    --  Mapping pour suivre un lien ou créer la note correspondante
     mappings = {
       ["<Leader>wl"] = {
         action = function()
