@@ -52,18 +52,20 @@ Plugin used inside Efficient nvim:
 ---
 *Config:*
 
-To uninstall a plugin use 
+**To remove a plugin:** 
+
+use: 
 
 ```
 :Lazy
 ```
 and follow instructions 
 
-To add a plugin:
+**To add a plugin:**
 
-Add a file named "plugins_you_wanna_use".lua inside lua/plugins, then change "plugins_you_wanna_use" by the name you want
+Add a file named by the name of the plugin (or whatever) with the extension .lua inside lua/plugins.
 
-For auto completion and hightlighting:
+**For auto completion and hightlighting:**
 
 use :
 
@@ -74,7 +76,7 @@ and install any packages you need for the languages you use
 
 installed by default :
 - ast-grep
-- balck
+- black
 - clangd
 - isort
 - lua-language-server
@@ -83,7 +85,7 @@ installed by default :
 - sonarlint-language-server
 - stylua
 
-For Obsidian:
+**For Obsidian:**
 
 open the config and replace / add with what you want
 ```

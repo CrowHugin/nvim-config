@@ -17,19 +17,20 @@ return{
     lazy = false,
     config = function()
       local capabilities = require('cmp_nvim_lsp').default_capabilities()
-      local lspconfig = require("lspconfig")
-      lspconfig.lua_ls.setup({
+      vim.lsp.config.lua_ls = {
         capabilities = capabilities,
-      })
-      lspconfig.rust_analyzer.setup({
+      }
+      vim.lsp.config.rust_analyzer = {
         capabilities = capabilities,
-      })
-      lspconfig.ast_grep.setup({
+      }
+      vim.lsp.config.ast_grep = {
         capabilities = capabilities,
-      })
-      lspconfig.clangd.setup({
+      }
+      vim.lsp.config.clangd = {
         capabilities = capabilities,
-      })
+      }
+
+      vim.lsp.enable({"lua_ls","rust_analyzer","ast_grep","clangd"})
       vim.keymap.set('n','K',vim.lsp.buf.hover, {desc = "Highight info on the current word"})
       vim.keymap.set('n','gd',vim.lsp.buf.definition, {desc = "Provide some def for the current word"})
       vim.keymap.set('n','<Leader>ca',vim.lsp.buf.code_action, {desc = "Provide some code action"})
