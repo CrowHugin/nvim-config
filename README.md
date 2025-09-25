@@ -13,11 +13,15 @@
 
 *If you already have an nvim configuration use:*
 
+```bash
 	mv ~/.config/nvim ~/.config/nvim.bak
+```
 
 Then:
 
+```bash
     git clone https://github.com/CrowHugin/nvim_config ~/.config/nvim
+```
 
 Plugin used inside Efficient nvim:
 
@@ -56,14 +60,31 @@ Plugin used inside Efficient nvim:
 
 use: 
 
-```
-:Lazy
-```
+`:Lazy`
+
 and follow instructions 
 
 **To add a plugin:**
 
 Add a file named by the name of the plugin (or whatever) with the extension .lua inside lua/plugins.
+Then add a lua table such as:
+```lua
+return {
+  {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require("catppuccin").setup({
+        flavour = "mocha",
+        --transparent_background = true,
+      })
+      vim.cmd.colorscheme("catppuccin")
+    end,
+  }
+}
+```
 
 **For auto completion and hightlighting:**
 
@@ -88,7 +109,7 @@ installed by default :
 **For Obsidian:**
 
 open the config and replace / add with what you want
-```
+```lua
 	{
 	      name = "the name you wanna use",
 	      path = "path you wanna use",
