@@ -6,8 +6,7 @@
 
 - *Nvim >= 0.10*
 - Git >= 2.19.0
-- Nerd Front **(optional)**
-
+- [Nerd Front](https://www.nerdfonts.com/font-downloads) **(optional)**
 ---
 *installation:*
 
