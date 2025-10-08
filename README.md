@@ -20,7 +20,7 @@
 Then:
 
 ```bash
-    git clone https://github.com/CrowHugin/nvim_config ~/.config/nvim
+    git clone https://github.com/CrowHugin/Efficient-vim ~/.config/nvim
 ```
 
 Plugin used inside Efficient nvim:
@@ -45,7 +45,6 @@ Plugin used inside Efficient nvim:
 |       noice        |        https://github.com/folke/noice.nvim         |
 |      none-ls       |     https://github.com/nvimtools/none-ls.nvim      |
 |      nvim-cmp      |        https://github.com/hrsh7th/nvim-cmp         |
-|      obsidian      |      https://github.com/epwalsh/obsidian.nvim      |
 |  pomo (pomodoro)   |        https://github.com/epwalsh/pomo.nvim        |
 |     telescope      |  https://github.com/nvim-telescope/telescope.nvim  |
 |     toggleterm     |     https://github.com/akinsho/toggleterm.nvim     |
@@ -58,15 +57,12 @@ Plugin used inside Efficient nvim:
 
 **To remove a plugin:** 
 
-use: 
+Remove the plugin file .lua you don't want anymore
 
-`:Lazy`
-
-and follow instructions 
 
 **To add a plugin:**
 
-Add a file named by the name of the plugin (or whatever) with the extension .lua inside lua/plugins.
+Add a file .lua 
 Then add a lua table such as:
 ```lua
 return {
@@ -106,16 +102,5 @@ installed by default :
 - sonarlint-language-server
 - stylua
 
-**For Obsidian:**
-
-open the config and replace / add with what you want
-```lua
-	{
-	      name = "the name you wanna use",
-	      path = "path you wanna use",
-      },
-    },
-```
-Make use to have Obsidian on your system and to have a vault open where the path is.
 
 *enjoy :)*
