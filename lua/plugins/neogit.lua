@@ -25,9 +25,6 @@ return{
     vim.keymap.set("n","<Leader>gb", ":Telescope git_branches<CR>",
       {desc = "(git) view branches", silent = true, noremap = true}
     )
-    vim.keymap.set("n","<Leader>gB", ":G blame<CR>",
-      {desc = "(git) blame", silent = true, noremap = true}
-    )
     vim.keymap.set("n","<Leader>gd", ":DiffviewOpen<CR>",
       {desc = "(git) show the diffview", silent = true, noremap = true,}
     )
@@ -41,7 +38,8 @@ return{
   config = function()
     vim.g.gitblame_enabled = 0 -- désactivé par défaut
     -- toggle avec <Leader>gB
-    vim.keymap.set("n", "<Leader>gB", "<cmd>GitBlameToggle<CR>", { desc = "toggle git blame" })
+    vim.keymap.set("n", "<Leader>gB", "<cmd>GitBlameToggle<CR>", 
+        { desc = "toggle git blame" })
   end,
   }
 
