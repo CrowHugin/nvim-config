@@ -23,33 +23,30 @@ Then:
 ```
 
 Plugin used inside Efficient nvim:
-
-|       Plugin       |                        Link                        |
-| :----------------: | :------------------------------------------------: |
-|       alpha        |       https://github.com/goolord/alpha-nvim        |
-| catppuccin (mocha) |         https://github.com/catppuccin/nvim         |
-|    cmp-nvim-lsp    |      https://github.com/hrsh7th/cmp-nvim-lsp       |
-|        dap         |      https://github.com/mfussenegger/nvim-dap      |
-|       dapui        |      https://github.com/rcarriga/nvim-dap-ui       |
-|      diffview      |     https://github.com/sindrets/diffview.nvim      |
-|      harpoon2      |      https://github.com/ThePrimeagen/harpoon       |
-|      lazyvim       |       https://github.com/folke/lazydev.nvim        |
-|     lsp-config     |      https://github.com/neovim/nvim-lspconfig      |
-|      lualine       |    https://github.com/nvim-lualine/lualine.nvim    |
-|      luaSnip       |        https://github.com/L3MON4D3/LuaSnip         |
-|       mason        |      https://github.com/mason-org/mason.nvim       |
-|  mason-lspconfig   | https://github.com/mason-org/mason-lspconfig.nvim  |
-|      neo-tree      |   https://github.com/nvim-neo-tree/neo-tree.nvim   |
-|     neogit<br>     |        https://github.com/NeogitOrg/neogit         |
-|       noice        |        https://github.com/folke/noice.nvim         |
-|      none-ls       |     https://github.com/nvimtools/none-ls.nvim      |
-|      nvim-cmp      |        https://github.com/hrsh7th/nvim-cmp         |
-|  pomo (pomodoro)   |        https://github.com/epwalsh/pomo.nvim        |
-|     telescope      |  https://github.com/nvim-telescope/telescope.nvim  |
-|     toggleterm     |     https://github.com/akinsho/toggleterm.nvim     |
-|     treesitter     | https://github.com/nvim-treesitter/nvim-treesitter |
-|      undotree      |       https://github.com/jiaoshijie/undotree       |
-|     which-key      |      https://github.com/folke/which-key.nvim       |
+- [alpha](https://github.com/goolord/alpha-nvim)
+- [catppuccin (mocha)](https://github.com/catppuccin/nvim)
+- [cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp)
+- [dap](https://github.com/mfussenegger/nvim-dap)
+- [dapui](https://github.com/rcarriga/nvim-dap-ui)
+- [ diffview](https://github.com/sindrets/diffview.nvim)
+- [ harpoon2](https://github.com/ThePrimeagen/harpoon)
+- [lazyvim](https://github.com/folke/lazydev.nvim)
+- [lsp-config](https://github.com/neovim/nvim-lspconfig)
+- [lualine](https://github.com/nvim-lualine/lualine.nvim)
+- [luaSnip](https://github.com/L3MON4D3/LuaSnip)
+- [mason](https://github.com/mason-org/mason.nvim)
+- [mason-lspconfig](https://github.com/mason-org/mason-lspconfig.nvim)
+- [neo-tree](https://github.com/nvim-neo-tree/neo-tree.nvim)
+- [neogit](https://github.com/NeogitOrg/neogit)
+- [noice](https://github.com/folke/noice.nvim)
+- [none-ls](https://github.com/nvimtools/none-ls.nvim)
+- [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
+- [pomo](https://github.com/epwalsh/pomo.nvim)
+- [telescope](https://github.com/nvim-telescope/telescope.nvim)
+- [toogleterm](https://github.com/akinsho/toggleterm.nvim)
+- [treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+- [undotree](https://github.com/jiaoshijie/undotree)
+- [which-key](https://github.com/folke/which-key.nvim)
 
 ---
 *Config:*
@@ -91,15 +88,15 @@ use :
 and install any packages you need for the languages you use
 
 installed by default :
-- ast-grep
-- black
-- clangd
-- isort
-- lua-language-server
-- pylint
-- rust-analyser
-- sonarlint-language-server
-- stylua
+- [ast-grep](https://ast-grep.github.io/)
+- [black](https://github.com/averms/black-nvim/tree/master)
+- [clangd](https://clangd.llvm.org/)
+- [isort](https://pycqa.github.io/isort/)
+- [lua-language-server](https://github.com/LuaLS/lua-language-server/wiki)
+- [pylint](https://pylint.readthedocs.io/en/stable/)
+- [rust-analyser](https://rust-analyzer.github.io/book/)
+- [sonarlint-language-server](https://github.com/SonarSource/sonarlint-language-server)
+- [stylua](https://github.com/JohnnyMorganz/StyLua)
 
 
 *enjoy :)*
