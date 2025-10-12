@@ -22,3 +22,4 @@ for _, mode in ipairs({ 'n', 'i', 'v' }) do
   vim.keymap.set(mode, '<Right>', '<Nop>', { noremap = true, silent = true })
 end
 
+vim.opt.mouse = ""
