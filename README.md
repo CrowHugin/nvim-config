@@ -19,7 +19,7 @@
 Then:
 
 ```bash
-    git clone https://github.com/CrowHugin/Efficient-vim ~/.config/nvim
+    git clone https://github.com/CrowHugin/nvim-config ~/.config/nvim
 ```
 
 Plugin used inside Efficient nvim:
