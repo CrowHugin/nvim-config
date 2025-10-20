@@ -7,9 +7,9 @@
 - *Nvim >= 0.10*
 - Git >= 2.19.0
 - [Nerd Front](https://www.nerdfonts.com/font-downloads) **(optional)** 
-     [How to install a Nerd Front on Linux](https://gist.github.com/matthewjberger/7dd7e079f282f8138a9dc3b045ebefa0)
-     [How to install a Nerd Front on Windows (WSL)](https://www.reddit.com/r/linux4noobs/comments/m9bpbw/how_to_install_nerdfonts_in_wsl/) 
-     [How to install a Nerd Front on Mac OS](https://www.lorenzobettini.it/2025/06/install-nerd-fonts-on-macos-with-homebrew/)
+     - [How to install a Nerd Front on Linux](https://gist.github.com/matthewjberger/7dd7e079f282f8138a9dc3b045ebefa0)
+     - [How to install a Nerd Front on Windows (WSL)](https://www.reddit.com/r/linux4noobs/comments/m9bpbw/how_to_install_nerdfonts_in_wsl/) 
+     - [How to install a Nerd Front on Mac OS](https://www.lorenzobettini.it/2025/06/install-nerd-fonts-on-macos-with-homebrew/)
 ---
 *installation:*
 
