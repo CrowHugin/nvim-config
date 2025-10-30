@@ -51,6 +51,7 @@ Plugin used inside Efficient nvim:
 - [toogleterm](https://github.com/akinsho/toggleterm.nvim)
 - [treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - [undotree](https://github.com/jiaoshijie/undotree)
+- [vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator)
 - [which-key](https://github.com/folke/which-key.nvim)
 
 ---
