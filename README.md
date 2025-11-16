@@ -13,6 +13,14 @@
 ---
 *installation:*
 
+Latest version off neovim on ubuntu / debian:
+```bash
+sudo apt-get install software-properties-common
+sudo add-apt-repository ppa:neovim-ppa/unstable
+sudo apt update 
+sudo apt-get install neovim
+```
+
 *If you already have an nvim configuration use:*
 
 ```bash
@@ -104,5 +112,10 @@ installed by default :
 - [sonarlint-language-server](https://github.com/SonarSource/sonarlint-language-server)
 - [stylua](https://github.com/JohnnyMorganz/StyLua)
 
-
+If it doesn't work use:
+```bash
+sudo apt-get install build-essential
+sudo apt-get install npm
+```
+ 
 *enjoy :)*
