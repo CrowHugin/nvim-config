@@ -33,6 +33,7 @@ Then:
     git clone https://github.com/CrowHugin/nvim-config ~/.config/nvim
 ```
 
+---
 Plugin used inside Efficient nvim:
 - [alpha](https://github.com/goolord/alpha-nvim)
 - [catppuccin (mocha)](https://github.com/catppuccin/nvim)
@@ -55,7 +56,6 @@ Plugin used inside Efficient nvim:
 - [pomo](https://github.com/epwalsh/pomo.nvim)
 - [render-mardown](https://github.com/MeanderingProgrammer/render-markdown.nvim)
 - [telescope](https://github.com/nvim-telescope/telescope.nvim)
-- [todo-comments](https://github.com/folke/todo-comments.nvim)
 - [toogleterm](https://github.com/akinsho/toggleterm.nvim)
 - [treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - [undotree](https://github.com/jiaoshijie/undotree)
@@ -63,16 +63,17 @@ Plugin used inside Efficient nvim:
 - [which-key](https://github.com/folke/which-key.nvim)
 
 ---
-*Config:*
-
 **To remove a plugin:** 
 
 Remove the plugin file .lua you don't want anymore
 
+Then use `:Lazy` & `X`
 
+---
 **To add a plugin:**
 
 Add a file .lua 
+
 Then add a lua table such as:
 ```lua
 return {
@@ -92,6 +93,7 @@ return {
 }
 ```
 
+---
 **For auto completion and hightlighting:**
 
 use :
@@ -117,5 +119,8 @@ If it doesn't work use:
 sudo apt-get install build-essential
 sudo apt-get install npm
 ```
- 
+
+or any missing packages
+
+---
 *enjoy :)*
