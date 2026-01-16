@@ -34,10 +34,10 @@ Then:
 ```
 
 ---
-Plugin used inside Efficient nvim:
+Plugin used inside nvim:
 - [alpha](https://github.com/goolord/alpha-nvim)
+- [blink.cmp](https://github.com/saghen/blink.cmp?tab=readme-ov-file)
 - [catppuccin (mocha)](https://github.com/catppuccin/nvim)
-- [cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp)
 - [dap](https://github.com/mfussenegger/nvim-dap)
 - [dapui](https://github.com/rcarriga/nvim-dap-ui)
 - [diffview](https://github.com/sindrets/diffview.nvim)
@@ -52,8 +52,6 @@ Plugin used inside Efficient nvim:
 - [neogit](https://github.com/NeogitOrg/neogit)
 - [noice](https://github.com/folke/noice.nvim)
 - [none-ls](https://github.com/nvimtools/none-ls.nvim)
-- [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
-- [pomo](https://github.com/epwalsh/pomo.nvim)
 - [render-mardown](https://github.com/MeanderingProgrammer/render-markdown.nvim)
 - [telescope](https://github.com/nvim-telescope/telescope.nvim)
 - [toogleterm](https://github.com/akinsho/toggleterm.nvim)
@@ -94,14 +92,17 @@ return {
 ```
 
 ---
-**For auto completion and hightlighting:**
+**For auto completion :**
 
-use :
+Mason and blink are used together
+
+
+To enable the auto completion on another language use:
 
 ```
 :Mason 
 ```
-and install any packages you need for the languages you use
+and install any packages you need
 
 installed by default :
 - [ast-grep](https://ast-grep.github.io/)
