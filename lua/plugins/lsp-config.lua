@@ -12,11 +12,30 @@ return{
       auto_install =true,
     },
   },
+
+  {
+    "saghen/blink.nvim",
+    dependencies = {
+      "rafamadriz/friendly-snippets"
+    },
+    opts = {
+      keymap = {
+        preset = "default",
+      },
+      completion = {
+        documentation = {
+          auto_show = true,
+        },
+      },
+    },
+  },
+
+
   {
     "neovim/nvim-lspconfig",
     lazy = false,
     config = function()
-      local capabilities = require('cmp_nvim_lsp').default_capabilities()
+      local capabilities = require('blink.cmp').get_lsp_capabilities()
       vim.lsp.config.lua_ls = {
         capabilities = capabilities,
       }
