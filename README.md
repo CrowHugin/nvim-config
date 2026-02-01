@@ -116,8 +116,7 @@ installed by default :
 
 If it doesn't work use:
 ```bash
-sudo apt-get install build-essential
-sudo apt-get install npm
+sudo apt-get install build-essential npm gcc make curl python3 ca-certificates
 ```
 
 or any missing packages
