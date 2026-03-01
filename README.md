@@ -34,7 +34,7 @@ Then:
 ```
 
 ---
-Plugin used inside Efficient nvim:
+Plugin used inside nvim:
 - [alpha](https://github.com/goolord/alpha-nvim)
 - [catppuccin (mocha)](https://github.com/catppuccin/nvim)
 - [cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp)
