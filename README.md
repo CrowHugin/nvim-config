@@ -35,6 +35,7 @@ Then:
 
 ---
 Plugin used inside nvim:
+- [42-header](https://github.com/Diogo-ss/42-header.nvim)
 - [alpha](https://github.com/goolord/alpha-nvim)
 - [catppuccin (mocha)](https://github.com/catppuccin/nvim)
 - [cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp)
