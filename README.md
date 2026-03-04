@@ -127,11 +127,13 @@ or any missing packages
 42.lua is a plugin used for adding 42 header
 
 don't forget to change : 
-	user = "user", -- Your user.   Not Committed Yet
-	mail = "email", -- Your mail.
+```lua
+user = "user", -- Your user.
+mail = "email", -- Your mail.
+```
 inside 42.lua
 
-Use "hg" in normal mode to use it.
+Use `hg` in normal mode to use it.
 
 ---
 *enjoy :)*
