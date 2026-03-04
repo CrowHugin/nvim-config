@@ -33,3 +33,6 @@ vim.keymap.set("n","<C-k>","<cmd> TmuxNaviagateUp<CR>", {noremap = false})
 
 -- disable mouse inside nvim
 vim.opt.mouse = ""
+
+--setting hg for the 42 header
+vim.api.nvim_set_keymap("n","hg","<cmd> Stdheader<CR>", {noremap = false})

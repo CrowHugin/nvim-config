@@ -122,4 +122,16 @@ sudo apt-get install build-essential npm gcc make curl python3 ca-certificates
 or any missing packages
 
 ---
+**42 header**
+
+42.lua is a plugin used for adding 42 header
+
+don't forget to change : 
+	user = "user", -- Your user.   Not Committed Yet
+	mail = "email", -- Your mail.
+inside 42.lua
+
+Use "hg" in normal mode to use it.
+
+---
 *enjoy :)*
