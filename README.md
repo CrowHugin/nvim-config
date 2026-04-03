@@ -34,6 +34,15 @@ Then:
 ```
 
 ---
+*Fonts installation*
+
+``` bash
+	cd ~/.config/nvim
+	cp -r ./fonts ~/.local/share/fonts/
+	fc-cache -fv
+```
+
+---
 Plugin used inside nvim:
 - [42-header](https://github.com/Diogo-ss/42-header.nvim)
 - [alpha](https://github.com/goolord/alpha-nvim)
