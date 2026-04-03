@@ -41,6 +41,7 @@ Then:
 	cp -r ./fonts ~/.local/share/fonts/
 	fc-cache -fv
 ```
+Be sure to set your terminal font to 0xProto Nerd Font.
 
 ---
 Plugin used inside nvim:
