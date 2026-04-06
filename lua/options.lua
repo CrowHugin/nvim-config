@@ -4,6 +4,7 @@ vim.cmd("set softtabstop=2")
 vim.cmd("set shiftwidth=2")
 vim.cmd("set number")
 vim.cmd("set colorcolumn=80")
+vim.cmd("syntax on")
 
 -- setting jj and jk to escape on normal mode
 vim.api.nvim_set_keymap("i", "jj", "<Esc>", { noremap = false })
