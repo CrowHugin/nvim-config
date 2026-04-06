@@ -57,12 +57,25 @@ return {
     dap.listeners.before.event_exited.dapui_config = function()
       dapui.close()
     end
+    vim.keymap.set("n", "<leader>dc", dap.continue, { desc = "Start/continue debugging" })
     vim.keymap.set("n", "<Leader>dt", dap.toggle_breakpoint, {desc = "Toggle a breakpoint for debug"})
-    vim.keymap.set("n", "<Leader>dc", dap.continue, {desc = "Continue the debugging"})
-    vim.keymap.set("n", "<Leader>dq", function()
-      dap.terminate()
-      dapui.close()
-      vim.cmd("echo 'Debug session terminated'")
-    end, { desc = "Quit debug session" })
+    vim.keymap.set("n", "<leader>do", dap.step_over, { desc = "Step over" })
+    vim.keymap.set("n", "<leader>di", dap.step_into, { desc = "Step into" })
+    vim.keymap.set("n", "<leader>dO", dap.step_out, { desc = "Step out" })
+    vim.keymap.set("n", "<leader>dt", dap.terminate, { desc = "Terminate debugging session" })
+
+    vim.keymap.set("n", "<leader>db", dap.toggle_breakpoint, { desc = "Toggle breakpoint" })
+    vim.keymap.set("n", "<leader>dB", function()
+      dap.set_breakpoint(vim.fn.input("Breakpoint condition: "))
+    end, { desc = "Set conditional breakpoint" })
+
+    vim.keymap.set("n", "<leader>dr", dap.repl.open, { desc = "Open REPL" })
+    vim.keymap.set("n", "<leader>dl", dap.run_last, { desc = "Run last debug session" })
+    vim.keymap.set("n", "<Leader>dq",
+      function()
+        dap.terminate()
+        dapui.close()
+        vim.cmd("echo 'Debug session terminated'")
+      end, { desc = "Quit debug session" })
   end,
 }
