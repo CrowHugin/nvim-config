@@ -8,11 +8,8 @@ return {
         null_ls.builtins.formatting.stylua,
         null_ls.builtins.formatting.black,
         null_ls.builtins.formatting.isort,
-
-
       },
     })
-
     vim.keymap.set("n", "<Leader>gf", vim.lsp.buf.format, {desc = "formatting the actual file"})
   end,
 }
