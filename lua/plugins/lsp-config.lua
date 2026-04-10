@@ -1,40 +1,42 @@
-return{
+return {
   {
-    "mason-org/mason.nvim",
+    "williamboman/mason.nvim",
     config = function()
       require("mason").setup()
     end
   },
   {
-    "mason-org/mason-lspconfig.nvim",
+    "williamboman/mason-lspconfig.nvim",
     opts = {
-      ensure_installed = { "lua_ls", "rust_analyzer","ast_grep","clangd" },
-      auto_install =true,
+      ensure_installed = { "lua_ls", "rust_analyzer", "ast_grep", "clangd", "pyright" },
+      auto_install = true,
     },
   },
   {
     "neovim/nvim-lspconfig",
+    dependencies = { "hrsh7th/cmp-nvim-lsp" },
     lazy = false,
     config = function()
-      local capabilities = require('cmp_nvim_lsp').default_capabilities()
-      vim.lsp.config.lua_ls = {
-        capabilities = capabilities,
-      }
-      vim.lsp.config.rust_analyzer = {
-        capabilities = capabilities,
-      }
-      vim.lsp.config.ast_grep = {
-        capabilities = capabilities,
-      }
-      vim.lsp.config.clangd = {
-        capabilities = capabilities,
-      }
+      -- Récupération des capacités pour nvim-cmp
+      local caps = require('cmp_nvim_lsp').default_capabilities()
 
-      vim.lsp.enable({"lua_ls","rust_analyzer","ast_grep","clangd"})
-      vim.keymap.set('n','K',vim.lsp.buf.hover, {desc = "Highight info on the current word"})
-      vim.keymap.set('n','gd',vim.lsp.buf.definition, {desc = "Provide some def for the current word"})
-      vim.keymap.set('n','<Leader>ca',vim.lsp.buf.code_action, {desc = "Provide some code action"})
+      -- Liste de tes serveurs
+      local servers = { "lua_ls", "rust_analyzer", "ast_grep", "clangd", "pyright" }
+
+      -- Configuration simplifiée style Neovim 0.11+
+      for _, server in ipairs(servers) do
+        vim.lsp.config[server] = {
+          capabilities = caps,
+        }
+      end
+
+      -- Activation en une seule ligne
+      vim.lsp.enable(servers)
+
+      -- Keymaps globaux
+      vim.keymap.set('n', 'K', vim.lsp.buf.hover, { desc = "Highlight info on the current word" })
+      vim.keymap.set('n', 'gd', vim.lsp.buf.definition, { desc = "Provide some def for the current word" })
+      vim.keymap.set('n', '<Leader>ca', vim.lsp.buf.code_action, { desc = "Provide some code action" })
     end
   }
-
 }
