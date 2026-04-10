@@ -8,8 +8,6 @@ return{
         position = "right",
       })
     end,
-  ---@module 'undotree.collector'
-  ---@type UndoTreeCollector.Opts
   opts = {
     -- your options
   },
