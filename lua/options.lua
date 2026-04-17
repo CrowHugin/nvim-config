@@ -7,6 +7,9 @@ vim.cmd("set colorcolumn=80")
 vim.cmd("set relativenumber")
 vim.cmd("syntax on")
 
+-- Setting the clipboard as the system's one
+vim.opt.clipboard = "unnamedplus"
+
 -- Setting jj and jk on escape
 vim.api.nvim_set_keymap("i", "jj", "<Esc>", { noremap = false })
 vim.api.nvim_set_keymap("i", "jk", "<Esc>", { noremap = false })
