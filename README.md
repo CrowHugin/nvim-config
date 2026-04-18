@@ -59,6 +59,7 @@ Plugin used inside nvim:
 - [luaSnip](https://github.com/L3MON4D3/LuaSnip)
 - [mason](https://github.com/mason-org/mason.nvim)
 - [mason-lspconfig](https://github.com/mason-org/mason-lspconfig.nvim)
+- [mini_pairs](https://github.com/nvim-mini/mini.pairs)
 - [neo-tree](https://github.com/nvim-neo-tree/neo-tree.nvim)
 - [neogit](https://github.com/NeogitOrg/neogit)
 - [noice](https://github.com/folke/noice.nvim)
