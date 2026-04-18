@@ -27,6 +27,10 @@ for _, mode in ipairs({ 'n', 'i', 'v' }) do
   vim.keymap.set(mode, '<Right>', '<Nop>', { noremap = true, silent = true })
 end
 
+-- Setting keymap to move more easily
+vim.keymap.set("n","<C-u>","<C-u>zz", {noremap = true, silent = true})
+vim.keymap.set("n","<C-d>","<C-d>zz", {noremap = true, silent = true})
+
 -- Setting kaymap to mouve between windows in tmux
 vim.keymap.set("n","<C-h>","<cmd> TmuxNaviagateLeft<CR>", {noremap = false})
 vim.keymap.set("n","<C-l>","<cmd> TmuxNaviagateRight<CR>", {noremap = false})
