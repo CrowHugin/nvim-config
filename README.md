@@ -65,10 +65,8 @@ Plugin used inside nvim:
 - [noice](https://github.com/folke/noice.nvim)
 - [none-ls](https://github.com/nvimtools/none-ls.nvim)
 - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
-- [pomo](https://github.com/epwalsh/pomo.nvim)
 - [render-mardown](https://github.com/MeanderingProgrammer/render-markdown.nvim)
 - [telescope](https://github.com/nvim-telescope/telescope.nvim)
-- [toogleterm](https://github.com/akinsho/toggleterm.nvim)
 - [treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - [undotree](https://github.com/jiaoshijie/undotree)
 - [vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator)
@@ -117,14 +115,14 @@ and install any packages you need for the languages you use
 
 installed by default :
 - [ast-grep](https://ast-grep.github.io/)
-- [black](https://github.com/averms/black-nvim/tree/master)
 - [clangd](https://clangd.llvm.org/)
-- [isort](https://pycqa.github.io/isort/)
 - [lua-language-server](https://github.com/LuaLS/lua-language-server/wiki)
 - [pylint](https://pylint.readthedocs.io/en/stable/)
 - [rust-analyser](https://rust-analyzer.github.io/book/)
-- [sonarlint-language-server](https://github.com/SonarSource/sonarlint-language-server)
 - [stylua](https://github.com/JohnnyMorganz/StyLua)
+- [pyright](https://github.com/microsoft/pyright)
+- [ruff](https://github.com/astral-sh/ruff)
+- [mypy](https://github.com/python/mypy)
 
 If it doesn't work use:
 ```bash

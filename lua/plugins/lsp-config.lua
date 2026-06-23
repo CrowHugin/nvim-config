@@ -8,7 +8,7 @@ return {
   {
     "williamboman/mason-lspconfig.nvim",
     opts = {
-      ensure_installed = { "lua_ls", "rust_analyzer", "ast_grep", "clangd", "pyright", "ruff", "mypy", "stylua" },
+      ensure_installed = {"ast_grep", "clangd", "lua_ls", "pylint", "rust_analyzer", "stylua", "pyright", "ruff", "mypy"},
       auto_install = true,
     },
   },
